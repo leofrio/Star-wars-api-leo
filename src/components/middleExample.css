@@ -1,0 +1,30 @@
+.showArea { 
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-around ;
+}  
+.loadingArea { 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+
+@keyframes spin { 
+    to { transform: rotate(360deg);}
+}
+
+
+.loader {
+    width: 16rem; 
+    height: 16rem; 
+    border-radius: 50%; 
+
+    border-top: 1rem solid rgba(255, 255, 255, 1);
+    border-left: 1rem solid rgba(255, 255, 255, 1);
+    border-right: 1rem solid rgba(255, 255, 255, 0); 
+
+    animation: spin 0.575s infinite linear;
+} 
